@@ -48,7 +48,7 @@ export default function Form() {
     setValid(validate());
   }, [sampleSizeError, sampleMeanError, standardDeviationError, hypMeanError]);
 
-  async function handleSubmit() {
+  function handleSubmit() {
     setSampleSizeError(
       !sampleSize || sampleSize < 2 || !Number.isInteger(parseFloat(sampleSize))
     );
